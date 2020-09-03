@@ -4,7 +4,7 @@ import {
 
 const INIT_STATE = {
     posts: [],
-    recentPost: []
+    recentPosts: []
 }
 
 export default function(state = INIT_STATE, action) {
