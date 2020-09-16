@@ -32,13 +32,19 @@ body {
     height: 100vh;
     width: 66vw;
     display: grid;
-    justify-items: stretch;
+    // justify-items: stretch;
     align-content: space-around;
 }
 
 
 .post-topic {
     margin: 4px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .logo-main, .recent-posts {
@@ -48,5 +54,7 @@ body {
 
 $color-gray-one: #666666;
 $color-gray-two: #b3b3b3;
+$color-blue-one: #0079ff;
 
 @import './searchBar';
+@import './recentPosts';
