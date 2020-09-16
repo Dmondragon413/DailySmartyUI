@@ -32,13 +32,18 @@ body {
     height: 100vh;
     width: 66vw;
     display: grid;
-    justify-items: center;
+    justify-items: stretch;
     align-content: space-around;
 }
 
 
 .post-topic {
     margin: 4px;
+}
+
+.logo-main, .recent-posts {
+    display: grid;
+    justify-items: center;
 }
 
 $color-gray-one: #666666;
