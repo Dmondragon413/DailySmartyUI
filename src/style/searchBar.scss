@@ -1,7 +1,7 @@
 .search-bar {
+    display: grid;
 
     .search-bar-wrapper {
-
         display: grid;
         grid-row-gap: 20px;
         width: 100%;
@@ -13,8 +13,7 @@
             border: 0px solid transparent;
             border-radius: 3px;
     
-            height: 110px;
-            font-size: 40px;
+            
     
             &::placeholder {
                 color: $color-gray-two;
@@ -37,4 +36,22 @@
     }
 
 
+}
+
+.search-bar-home {
+    align-content: center;
+    justify-items: center;
+    input {
+        height: 110px;
+        font-size: 40px;
+    }
+}
+
+.search-bar-results {
+    
+
+    input {
+        font-size: 32px;
+        height: 36px;
+    }
 }
