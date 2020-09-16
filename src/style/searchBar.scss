@@ -13,7 +13,7 @@
             border: 0px solid transparent;
             border-radius: 3px;
     
-            
+            transition: all .2s ease;
     
             &::placeholder {
                 color: $color-gray-two;
