@@ -27,15 +27,6 @@ body {
     justify-content: center;
 }
 
-.home {
-    margin-top: 2rem;
-    height: 100vh;
-    width: 66vw;
-    display: grid;
-    // justify-items: stretch;
-    align-content: space-around;
-}
-
 
 .post-topic {
     margin: 4px;
@@ -52,9 +43,14 @@ ul {
     justify-items: center;
 }
 
+
 $color-gray-one: #666666;
 $color-gray-two: #b3b3b3;
 $color-blue-one: #0079ff;
 
+
+@import './mixins';
+@import './home';
 @import './searchBar';
 @import './recentPosts';
+@import './results';
