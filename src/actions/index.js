@@ -4,6 +4,7 @@ import {
 } from './types';
 
 import axios from 'axios';
+import { useEffect } from 'react';
 
 
 export function fetchRecentPosts() {
@@ -26,7 +27,7 @@ export function fetchPostsWithQuery(query, callback) { // why is it called callb
                 type: SET_RESULTS_POSTS,
                 payload: response.data.posts
             })
-            if (callback) { callback() } // call on function? and is this a short version of a ternary operator??
+            if (callback) { callback()} // call on function? and is this a short version of a ternary operator??
         })
     }
 }

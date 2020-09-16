@@ -49,17 +49,21 @@ class Post extends Component {
             )
         }else if(this.props.type === "result") {
             return(
-                <li className="result=post">
+                <li className="result-post">
                     <div className="result-post-topics">
                         {this.renderTopics()}
                     </div>
+
                     <div className="result-post-title">
                         <a target="_blank" href={this.props.url_for_post}
                             onMouseEnter={() => this.setState({ height: 70 })}
                             onMouseLeave={() => this.setState({ height: 0 })}
-                        >{this.props.title}</a>
+                        >
+                            {this.props.title}
+                        </a>
                     </div>
-                    <AnimateHeight //  react animate hieght is a good 3rd party library that gives us a good animation easily with minimal CSS styling.
+
+                    <AnimateHeight //  react animate height is a good 3rd party library that gives us a good animation easily with minimal CSS styling.
                         duration={500}
                         height={this.state.height}
                     >
