@@ -40,6 +40,11 @@
 
     .result-post-links {
         display: flex;
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
 
@@ -49,12 +54,17 @@
     display: flex;
     flex-basis: 205px;
     margin-right: 35px;
+
+    
     
     .post-link-box {
         min-width: 70px;
         background-color: $color-gray-three;
         margin-right: 16px;  // when using FLEXbox, use margin because we have no GRID-gaps functionalities.
 
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
 
     .post-link-link a {

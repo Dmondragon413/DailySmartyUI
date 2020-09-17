@@ -41,9 +41,16 @@
 .search-bar-home {
     align-content: center;
     justify-items: center;
+
     input {
         height: 110px;
         font-size: 40px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 23px;
+            height: 59px;
+            width: 66vw;
+        }
     }
 }
 
@@ -53,5 +60,11 @@
     input {
         font-size: 32px;
         height: 36px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 23px;
+            height: 59px;
+            width: 66vw;
+        }
     }
 }
